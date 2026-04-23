@@ -546,7 +546,7 @@ My portfolio
     <ul class="nav-links">
       <li><a href="#projects">Projects</a></li>
       <li><a href="#chatbot">Q&amp;A</a></li>
-      <li><a href="https://github.com/dev294" target="_blank" class="nav-gh">GitHub ↗</a></li>
+      <li><a href="https://github.com/buildwithirshad" target="_blank" class="nav-gh">GitHub ↗</a></li>
     </ul>
   </nav>
 
@@ -557,7 +557,7 @@ My portfolio
       turning real-world data problems into working systems.</p>
     <div class="hero-ctas">
       <a href="#projects" class="btn btn-primary">View Projects</a>
-      <a href="https://github.com/dev294" target="_blank" class="btn btn-ghost">GitHub ↗</a>
+      <a href="https://github.com/buildwithirshad" target="_blank" class="btn btn-ghost">GitHub ↗</a>
     </div>
     <div class="hero-tags">
       <span class="tag">Python</span>
