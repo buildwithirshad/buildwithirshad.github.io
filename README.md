@@ -551,7 +551,7 @@ My portfolio
   </nav>
 
   <section class="hero">
-    <div class="hero-label">Information Systems · Data Science</div>
+    <div class="hero-label">Machine Learning · Data Science</div>
     <h1>Build with<br />Irshad<span>.</span></h1>
     <p class="hero-sub">Graduate student building data pipelines, ML models, and intelligent applications. Focused on
       turning real-world data problems into working systems.</p>
@@ -559,16 +559,7 @@ My portfolio
       <a href="#projects" class="btn btn-primary">View Projects</a>
       <a href="https://github.com/buildwithirshad" target="_blank" class="btn btn-ghost">GitHub ↗</a>
     </div>
-    <div class="hero-tags">
-      <span class="tag">Python</span>
-      <span class="tag">XGBoost</span>
-      <span class="tag">FastAPI</span>
-      <span class="tag">PostgreSQL</span>
-      <span class="tag">Docker</span>
-      <span class="tag">RAG</span>
-      <span class="tag">Scikit-learn</span>
-      <span class="tag">React</span>
-    </div>
+
   </section>
 
   <section class="sec" id="projects">
@@ -586,7 +577,7 @@ My portfolio
             <span class="stack-tag">pgvector</span><span class="stack-tag">Redis</span>
             <span class="stack-tag">Celery</span><span class="stack-tag">Docker</span>
           </div>
-          <a href="https://github.com/dev294" target="_blank" class="project-link">
+          <a href="https://github.com/buildwithirshad/Rag-System" target="_blank" class="project-link">
             View on GitHub
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M7 17L17 7M17 7H7M17 7v10" />
@@ -603,7 +594,7 @@ My portfolio
             <span class="stack-tag">Python</span><span class="stack-tag">XGBoost</span>
             <span class="stack-tag">SHAP</span><span class="stack-tag">Scikit-learn</span>
           </div>
-          <a href="https://github.com/dev294" target="_blank" class="project-link">
+          <a href="https://github.com/buildwithirshad/Fraud-detector" target="_blank" class="project-link">
             View on GitHub
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M7 17L17 7M17 7H7M17 7v10" />
@@ -646,7 +637,7 @@ My portfolio
   <footer>
     <span class="footer-l"></span>
     <div class="footer-links">
-      <a href="https://github.com/dev294" target="_blank">GitHub</a>
+      <a href="https://github.com/buildwithirshad" target="_blank">GitHub</a>
       <a href="https://www.linkedin.com/in/irshad-mohiuddin/" target="_blank">LinkedIn</a>
       <a href="mailto:irshadmohiuddin01@gmail.com">Email</a>
     </div>
@@ -655,11 +646,11 @@ My portfolio
   <script>
     const answers = {
       "What are you good at?": "Building data pipelines and applied ML end-to-end — from data prep and model training to deployment. I'm comfortable across the stack: backends, APIs, and dashboards.",
-      "What are you studying?": "Graduate student in Information Systems with a focus on data science. My work covers machine learning, data engineering, and NLP — always aimed at building real, working systems.",
-      "What's your best project?": "The Intelligent Document Retrieval System — a production-grade RAG pipeline with hybrid search, async ingestion, and a FastAPI backend. It brings together vector databases, Redis caching, and clean software architecture.",
+      "What are you studying?": "Graduate student in Information Systems with a focus on data science. My work covers machine learning, data engineering - always aimed at building real, working systems.",
+      "What's your best project?": "Probably the Intelligent Document Retrieval System. It is a production-grade RAG pipeline with hybrid search (cosine similarity + BM25 via RRF), async ingestion with Celery, and a FastAPI backend backed by PostgreSQL with pgvector.",
       "What's your tech stack?": "Python for data and ML — Scikit-learn, XGBoost, SHAP, Pandas. FastAPI and PostgreSQL for backends. Docker for deployment. React and Streamlit for frontends.",
-      "Are you open to work?": "Yes — actively looking for data engineering or data science roles. Most interested in positions involving production data systems and applied ML.",
-      "How can I contact you?": "LinkedIn or GitHub — links are in the footer. Happy to chat about projects and roles."
+      "Are you open to work?": "Yes, actively looking for data engineering or data science and AI engineering roles. Most interested in positions involving production data systems and applied ML.",
+      "How can I contact you?": "LinkedIn or GitHub. Links are in the footer. Happy to chat about projects and roles."
     };
 
     function ask(btn) {
@@ -680,5 +671,7 @@ My portfolio
     }
   </script>
 </body>
+
+</html>
 
 </html>
