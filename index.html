@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Irshad · Data & Software</title>
+  <title>Irshad Mohiuddin · Data Engineer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=DM+Mono:wght@300;400&display=swap"
@@ -154,7 +154,7 @@
       font-size: 14.5px;
       color: var(--muted);
       line-height: 1.85;
-      max-width: 420px;
+      max-width: 480px;
       margin-bottom: 2.2rem;
       font-weight: 300;
     }
@@ -248,7 +248,7 @@
     /* PROJECTS */
     .projects-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       gap: 1px;
       background: var(--border2)
     }
@@ -312,15 +312,11 @@
       display: inline-flex;
       align-items: center;
       gap: 5px;
-      font-size: 12px;
+      font-size: 11.5px;
       font-weight: 500;
       color: var(--green);
       text-decoration: none;
-      transition: gap 0.15s;
-    }
-
-    .project-link:hover {
-      gap: 9px
+      letter-spacing: 0.02em;
     }
 
     .project-link svg {
@@ -329,44 +325,42 @@
     }
 
     /* CHATBOT */
-    #chatbot {
-      background: var(--bg)
-    }
-
     .chat-wrap {
       max-width: 540px;
       border: 1px solid var(--border2);
+      background: var(--bg);
     }
 
     .chat-header {
+      padding: 11px 14px;
+      border-bottom: 1px solid var(--border2);
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 11px 15px;
-      border-bottom: 1px solid var(--border2);
       background: var(--bg2);
     }
 
     .chat-name {
-      font-size: 13px;
-      font-weight: 500;
-      color: var(--text)
+      font-family: 'DM Mono', monospace;
+      font-size: 11px;
+      font-weight: 300;
+      color: var(--text);
+      letter-spacing: 0.05em;
     }
 
     .chat-status {
       font-family: 'DM Mono', monospace;
-      font-size: 10.5px;
+      font-size: 10px;
       font-weight: 300;
-      color: var(--green);
+      color: var(--muted);
       display: flex;
       align-items: center;
-      gap: 6px;
+      gap: 5px;
     }
 
     .sdot {
       width: 5px;
       height: 5px;
-      border-radius: 50%;
       background: var(--green);
       animation: pulse 2.5s ease-in-out infinite
     }
@@ -549,23 +543,24 @@
   </nav>
 
   <section class="hero">
-    <div class="hero-label">Information Systems · Data Science</div>
+    <div class="hero-label">Data Engineering · AI Systems</div>
     <h1>Build with<br />Irshad<span>.</span></h1>
-    <p class="hero-sub">Graduate student building data pipelines, ML models, and intelligent applications. Focused on
-      turning real-world data problems into working systems.</p>
+    <p class="hero-sub">I build data pipelines and retrieval systems — batch and streaming lakehouses on PySpark and Delta Lake, real-time Kafka pipelines, and RAG systems on Postgres + pgvector.</p>
     <div class="hero-ctas">
       <a href="#projects" class="btn btn-primary">View Projects</a>
       <a href="https://github.com/dev294" target="_blank" class="btn btn-ghost">GitHub ↗</a>
     </div>
     <div class="hero-tags">
-      <span class="tag">Python</span>
-      <span class="tag">XGBoost</span>
-      <span class="tag">FastAPI</span>
-      <span class="tag">PostgreSQL</span>
+      <span class="tag">PySpark</span>
+      <span class="tag">Delta Lake</span>
+      <span class="tag">Kafka</span>
+      <span class="tag">Airflow</span>
+      <span class="tag">dbt</span>
+      <span class="tag">AWS</span>
       <span class="tag">Docker</span>
-      <span class="tag">RAG</span>
-      <span class="tag">Scikit-learn</span>
-      <span class="tag">React</span>
+      <span class="tag">Postgres</span>
+      <span class="tag">pgvector</span>
+      <span class="tag">FastAPI</span>
     </div>
   </section>
 
@@ -574,15 +569,15 @@
       <div class="sec-title">Projects</div>
       <div class="projects-grid">
 
+        <!-- TODO: update href to the specific repo URL once pushed -->
         <div class="project-card">
           <div class="project-num">01</div>
-          <div class="project-title">Intelligent Document Retrieval System</div>
-          <p class="project-desc">Production-ready RAG pipeline with hybrid search via Reciprocal Rank Fusion, async
-            document ingestion, Redis caching, and a Streamlit frontend.</p>
+          <div class="project-title">NYC Taxi Analytics Platform</div>
+          <p class="project-desc">Batch lakehouse pipeline processing 2.9M NYC taxi trips through a Bronze / Silver / Gold Medallion architecture on Delta Lake, with watermarked incremental ingestion, SCD Type 2 history, a star schema, and Airflow orchestration.</p>
           <div class="project-stack">
-            <span class="stack-tag">Python</span><span class="stack-tag">FastAPI</span>
-            <span class="stack-tag">pgvector</span><span class="stack-tag">Redis</span>
-            <span class="stack-tag">Celery</span><span class="stack-tag">Docker</span>
+            <span class="stack-tag">PySpark</span><span class="stack-tag">Delta Lake</span>
+            <span class="stack-tag">Airflow</span><span class="stack-tag">AWS S3/EC2</span>
+            <span class="stack-tag">pytest</span>
           </div>
           <a href="https://github.com/dev294" target="_blank" class="project-link">
             View on GitHub
@@ -592,14 +587,15 @@
           </a>
         </div>
 
+        <!-- TODO: update href to the specific repo URL once pushed -->
         <div class="project-card">
           <div class="project-num">02</div>
-          <div class="project-title">Credit Card Fraud Detection</div>
-          <p class="project-desc">ML pipeline comparing Logistic Regression, Random Forest, and XGBoost on real
-            transaction data, with SHAP explainability and cost-based threshold optimization.</p>
+          <div class="project-title">Real-Time Ride Booking Analytics</div>
+          <p class="project-desc">Streaming pipeline ingesting 100 events/sec from a Kafka producer into PySpark Structured Streaming with 1-minute windowed aggregations, watermarks for late data, a dead-letter queue, and checkpointed recovery to S3.</p>
           <div class="project-stack">
-            <span class="stack-tag">Python</span><span class="stack-tag">XGBoost</span>
-            <span class="stack-tag">SHAP</span><span class="stack-tag">Scikit-learn</span>
+            <span class="stack-tag">Kafka</span><span class="stack-tag">Spark Streaming</span>
+            <span class="stack-tag">Airflow</span><span class="stack-tag">Docker Compose</span>
+            <span class="stack-tag">AWS S3/EC2</span>
           </div>
           <a href="https://github.com/dev294" target="_blank" class="project-link">
             View on GitHub
@@ -609,6 +605,23 @@
           </a>
         </div>
 
+        <!-- TODO: update href to the specific repo URL once pushed -->
+        <div class="project-card">
+          <div class="project-num">03</div>
+          <div class="project-title">RAG Document Q&amp;A System</div>
+          <p class="project-desc">Document retrieval service with token-aware chunking and hybrid search combining pgvector HNSW similarity and Postgres full-text search, fused via Reciprocal Rank Fusion. Redis caches embeddings by content hash to avoid redundant OpenAI calls.</p>
+          <div class="project-stack">
+            <span class="stack-tag">FastAPI</span><span class="stack-tag">pgvector</span>
+            <span class="stack-tag">Redis</span><span class="stack-tag">OpenAI</span>
+            <span class="stack-tag">Docker</span>
+          </div>
+          <a href="https://github.com/dev294" target="_blank" class="project-link">
+            View on GitHub
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M7 17L17 7M17 7H7M17 7v10" />
+            </svg>
+          </a>
+        </div>
 
       </div>
     </div>
@@ -629,9 +642,9 @@
         <div class="chat-qs">
           <div class="qs-label">Suggested</div>
           <div class="qs-grid">
-            <button class="q-btn" onclick="ask(this)">What are you good at?</button>
+            <button class="q-btn" onclick="ask(this)">What do you do?</button>
             <button class="q-btn" onclick="ask(this)">What are you studying?</button>
-            <button class="q-btn" onclick="ask(this)">What's your best project?</button>
+            <button class="q-btn" onclick="ask(this)">What's your strongest project?</button>
             <button class="q-btn" onclick="ask(this)">What's your tech stack?</button>
             <button class="q-btn" onclick="ask(this)">Are you open to work?</button>
             <button class="q-btn" onclick="ask(this)">How can I contact you?</button>
@@ -652,12 +665,12 @@
 
   <script>
     const answers = {
-      "What are you good at?": "Building data pipelines and applied ML end-to-end — from data prep and model training to deployment. I'm comfortable across the stack: backends, APIs, and dashboards.",
-      "What are you studying?": "Graduate student in Information Systems with a focus on data science. My work covers machine learning, data engineering, and NLP — always aimed at building real, working systems.",
-      "What's your best project?": "The Intelligent Document Retrieval System — a production-grade RAG pipeline with hybrid search, async ingestion, and a FastAPI backend. It brings together vector databases, Redis caching, and clean software architecture.",
-      "What's your tech stack?": "Python for data and ML — Scikit-learn, XGBoost, SHAP, Pandas. FastAPI and PostgreSQL for backends. Docker for deployment. React and Streamlit for frontends.",
-      "Are you open to work?": "Yes — actively looking for data engineering or data science roles. Most interested in positions involving production data systems and applied ML.",
-      "How can I contact you?": "LinkedIn or GitHub — links are in the footer. Happy to chat about projects and roles."
+      "What do you do?": "I'm a data engineer — I build batch and streaming pipelines and the retrieval systems that sit on top of them. My work covers lakehouses on PySpark and Delta Lake, real-time Kafka pipelines, and RAG systems with Postgres + pgvector.",
+      "What are you studying?": "Graduate student in Information Systems. My focus is data engineering — pipelines, lakehouses, orchestration — and applied AI systems like RAG.",
+      "What's your strongest project?": "The NYC Taxi Analytics Platform — a Medallion lakehouse on Delta Lake processing 2.9M trips, with watermarked incremental ingestion, SCD Type 2 history, a star schema, and Airflow orchestration. It's the project that covers the most ground a junior DE actually does on the job.",
+      "What's your tech stack?": "Python and SQL day-to-day. PySpark, Delta Lake, Kafka, and Airflow for pipelines. dbt for transformations. Postgres, pgvector, and Redis for storage and retrieval. AWS (S3, EC2, IAM) and Docker for deployment. FastAPI for services on top.",
+      "Are you open to work?": "Yes — actively looking for entry-level data engineering roles. Most interested in teams building production pipelines and lakehouses, with bonus points for AI/retrieval work.",
+      "How can I contact you?": "LinkedIn or email — both are in the footer. Happy to chat about projects or roles."
     };
 
     function ask(btn) {
